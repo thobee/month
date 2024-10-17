@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days in Month Calculator</title>
+  </head>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: brown;
+      width: 100%;
+      height: 100vh;
+    }
+    .container {
+      width: 30%;
+      height: 300px;
+      background-color: white;
+      color: black;
+      margin-top: 50px;
+      margin-left: 35%;
+      border-radius: 20px 20px 20px 20px;
+      
+    }
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      background-color: lightskyblue;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      padding-left: 20px;
+      
+    }
+    span {
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      color: white;
+    }
+    .mid {
+      width: 100%;
+      height: 60px;
+      color: white;
+      background-color: black;
+      padding-top: 10px;
+      padding-left: 10px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .mid input {
+      width: 150px;
+      height: 40px;
+      font-style: 30px;
+
+      
+    }
+    button {
+      font-weight: 600;
+      width: 150px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border-radius: 30px;
+      text-align: center;
+      border-color: transparent;
+      margin-left: 128px;
+    }
+    p {
+      margin-top: 40px;
+      width: 100%;
+      height: 50px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      color: white;
+      padding-left: 40px;
+      padding-top: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Days in a Month Calculator</h1>
+
+      <div class="mid">
+        <span for="month">Month (jan-Dec):</span>
+        <input type="text" id="month" class="val"/>
+      </div>
+      <br/>
+      <button onclick="position()">RESULT</button>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
+
+<script>
+  function position() {
+        
+        let input = document.querySelector('.val').value.trim().toLowerCase()
+        if (input === 'january') {
+            result.innerHTML = 'This is the 1st month of the year'
+        } else if (input === 'february') {
+            result.innerHTML = 'This is the 2nd month of the year'
+        } else if (input === 'march') {
+            result.innerHTML = 'This is the 3rd month of the year'
+        } else if (input === 'april') {
+            result.innerHTML = 'This is the 4th month of the year'
+        } else if (input === 'may') {
+            result.innerHTML = 'This is the 5th month of the year'
+        } else if (input === 'june') {
+            result.innerHTML = 'This is the 6th month of the year'
+        } else if (input === 'july') {
+            result.innerHTML = 'This is the 7th month of the year'
+        } else if (input === 'august') {
+            result.innerHTML = 'This is the 8th month of the year'
+        } else if (input === 'september') {
+            result.innerHTML = 'This is the 9th month of the year'
+        } else if (input === 'october') {
+            result.innerHTML = 'This is the 10th month of the year'
+        } else if (input === 'november') {
+            result.innerHTML = 'This is the 11th month of the year'
+        } else if (input === 'december') {
+            result.innerHTML = 'This is the 12th month of the year'
+        } else {
+            result.innerHTML = "invalid day"
+        }
+
+        document.querySelector('result').value = ''
+
+}
+
+</script>
